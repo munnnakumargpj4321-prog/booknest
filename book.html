@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="mainbar">
+        <div class="content">
+            <div class="left">
+                <img src="logo.png" alt="BookNest logo">
+                <h1>BookNest</h1>
+            </div>
+            <div class="right">
+                <a href="index.html">Home</a>
+                <button class="theme-btn" type="button" aria-label="Switch to dark mode" title="Switch theme">🌙</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="book-details">
+            <a href="index.html">← Back to books</a>
+            <div id="bookDetails" aria-live="polite">
+                Loading book...
+            </div>
+        </section>
+    </main>
+    <script src="book.js"></script>
+</body>
+</html>

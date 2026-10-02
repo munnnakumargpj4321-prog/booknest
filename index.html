@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="mainbar">
+        <div class="content">
+            <div class="left">
+                <img src="logo.png" alt="BookNest logo">
+                <h1>BookNest</h1>
+            </div>
+            <div class="right">
+                <a href="about.html">About</a>
+                <button class="theme-btn" type="button" aria-label="Switch to dark mode" title="Switch theme">🌙</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="center">
+                <h2>Find your next book.</h2>
+                <p>Search for books, authors and more.</p>
+                <form class="search-box">
+                    <label class="sr-only" for="searchInput">Search for a book</label>
+                    <input
+                        type="text"
+                        placeholder="Search for a book..."
+                        id="searchInput"
+                        autocomplete="off"
+                    >
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+        <section class="books">
+            <div class="section-title">
+                <div class="no">
+                <h2>Recent Books</h2>
+                <p>Explore newer books you might like.</p>
+                </div>  
+                <div class="education-callout">
+                    <div class="pointer">
+                        <img src="point2.avif" alt="" width="50" height="50">
+                    </div>
+                    <div class="education">
+                        <a href="education.html">Indian Education</a>
+                    </div>
+                </div>
+            </div>
+            <div class="book-list" id="bookList" aria-live="polite"></div>
+    
+        <button id="loadMoreBtn" class="load-more-btn">
+            Load More
+        </button>
+        </section>
+    </main>
+    <footer>
+        <p>BookNest · Find a book you want to read.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

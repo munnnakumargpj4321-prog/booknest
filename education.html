@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Education | BookNest</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="education.css">
+</head>
+
+<body>
+    <header class="mainbar">
+        <div class="content">
+            <div class="left">
+                <img src="logo.png" alt="BookNest logo">
+                <h1>BookNest</h1>
+            </div>
+
+            <div class="right">
+                <a href="index.html">Home</a>
+                <button class="theme-btn" type="button" aria-label="Switch to dark mode"
+                    title="Switch theme">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="education-page">
+        <a class="back-link" href="index.html">← Back to books</a>
+
+        <section class="education-hero" aria-labelledby="education-title">
+            <h2 id="education-title">Indian Education</h2>
+            <p class="intro">Find textbooks and educational resources<br class="desktop-break"> from official
+                educational platforms.</p>
+
+            <form class="education-search" id="educationSearch">
+                <label class="sr-only" for="educationQuery">Search educational content</label>
+                <input id="educationQuery" type="search" placeholder="Search educational content..." autocomplete="off">
+
+                <div class="filter-row">
+                    <label>
+                        <span class="sr-only">Class</span>
+                        <select id="classFilter">
+                            <option value="">Any class</option>
+                            <option>Class 1</option>
+                            <option>Class 2</option>
+                            <option>Class 3</option>
+                            <option>Class 4</option>
+                            <option>Class 5</option>
+                            <option>Class 6</option>
+                            <option>Class 7</option>
+                            <option>Class 8</option>
+                            <option>Class 9</option>
+                            <option>Class 10</option>
+                            <option>Class 11</option>
+                            <option>Class 12</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <span class="sr-only">Subject</span>
+                        <select id="subjectFilter">
+                            <option value="">Any subject</option>
+                            <option>Mathematics</option>
+                            <option>Science</option>
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Social Science</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <span class="sr-only">Board</span>
+                        <select id="boardFilter">
+                            <option value="">Any board</option>
+                            <option>CBSE</option>
+                            <option>NCERT</option>
+                            <option>NIOS</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <span class="sr-only">Language</span>
+                        <select id="languageFilter">
+                            <option value="">Any language</option>
+                            <option>English</option>
+                            <option>Hindi</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <span class="sr-only">Medium</span>
+                        <select id="mediumFilter">
+                            <option value="">Any medium</option>
+                            <option>English</option>
+                            <option>Hindi</option>
+                        </select>
+                    </label>
+                </div>
+
+                <button class="education-submit" type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="resources" aria-labelledby="resources-title">
+            <div class="resource-heading">
+                <div>
+                    <h2 id="resources-title">Educational Resources</h2>
+                </div>
+                <span class="resource-rule" aria-hidden="true"></span>
+            </div>
+            <div class="empty-resources" id="emptyResources" aria-live="polite">
+                <span class="empty-mark" aria-hidden="true">＋</span>
+                <p>No resources found yet.</p>
+                <span>Search by topic, class, subject, board, language, or medium.</span>
+            </div>
+            <button class="load-more-education" id="loadMoreEducation" type="button">
+                Load More
+            </button>
+        </section>
+    </main>
+
+    <script src="education.js"></script>
+</body>
+
+</html>
